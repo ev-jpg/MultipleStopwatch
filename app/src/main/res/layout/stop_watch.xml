@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <Chronometer
+            android:id="@+id/chron"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/outline"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="34sp"
+            android:layout_toEndOf="@+id/remove"
+            />
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_remove_24"
+            />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/chron"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_stop_24"
+           />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/reset"
+            android:background="@drawable/ic_baseline_pause_24"
+            />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/pause"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+          />
+
+</RelativeLayout>
